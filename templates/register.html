@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Регистрация</h2>
+<form method="POST">
+    <label for="username">Имя пользователя:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+    <label for="is_admin">Админ:</label>
+    <input type="checkbox" id="is_admin" name="is_admin">
+    <button type="submit">Зарегистрироваться</button>
+</form>
+{% endblock %}

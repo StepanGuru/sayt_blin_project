@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Добро пожаловать, {{ session['username'] }}!</h2>
+    <div class="obsh">
+        <div class="menu">
+            <button>Добавить заявку</button>
+        </div>
+        <div id="map"></div>
+    </div>
+{% endblock %}
