@@ -35,6 +35,7 @@ input, button {
 }
 
 #map {
-    width: 85fr;
-    height: 100fr;
+    width: 100vw;
+    height: 85vh;
+    z-index: 1;
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cleaner Site</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=d4607847-3f6e-4641-bc16-d0c6622bd173&lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=d4607847-3f6e-4641-bc16-d0c6622bd173" type="text/javascript"></script>
 </head>
 <body>
     <header>
@@ -26,8 +26,12 @@
         function init(){
             var myMap = new ymaps.Map("map", {
                 center: [55.76, 37.64],
-                zoom: 7
+                zoom: 10
             });
+        }
+
+        function addMarker(type){
+            
         }
     </script>
 </body>
